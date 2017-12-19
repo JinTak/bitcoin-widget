@@ -1,0 +1,45 @@
+<!-- Author: Jin Tak -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+<body>
+     <div class="container">
+        <h2 class="title">Bitcoin's current price is</h2> 
+        <h3 id="bitcoin-price"><span id="dollarSign">$</span></h3>
+        <button id="btn">Get Price</button>
+     </div>
+
+
+    <script>
+        var button = document.getElementById('btn');
+        var insertPrice = document.getElementById('bitcoin-price');
+
+        button.addEventListener('click', function() {
+
+            var XHR = new XMLHttpRequest();
+
+            XHR.onreadystatechange = function() {
+                if(XHR.readyState == 4 && XHR.status == 200) {
+                    var price = JSON.parse(XHR.responseText).bpi.USD.rate;
+                    // console.log(price);
+                    insertPrice.innerHTML = "<span id='dollarSign'>$</span>  " + price;
+
+                }
+            }
+
+            XHR.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice.json');
+            XHR.send();
+        })
+    </script>
+</body>
+</html>

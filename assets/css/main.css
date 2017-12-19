@@ -1,0 +1,74 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for container div which holds all elements */
+.container {
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+/* Styling for Title */
+.title {
+    color:#fff;
+    padding-top: 5%;
+    font-size: 50px;
+    text-align:center;
+    font-family: 'Russo One', 'Roboto' ,sans-serif;
+}
+
+/* Styling for Price of Bitcoin */
+#bitcoin-price {
+    color: #FED148;
+    font-size: 75px;
+    padding-top: 3%;
+    text-align:center;
+    font-family: 'Russo One', 'Roboto' ,sans-serif;
+}
+
+#dollarSign {
+    color: limegreen;
+}
+
+button {
+    height: 50px;
+    width: 175px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 8px #fff;
+    transition: all .2s;
+}
+
+button:hover {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    box-shadow: 0 5px 5px rgb(232, 244, 66);
+    border: none;
+
+}
+button:active {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+    box-shadow: 0 1px 3px rgb(232, 244, 66);
+}
+

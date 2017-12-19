@@ -21,9 +21,11 @@
 
 
     <script>
+        // Getting DOM elements 
         var button = document.getElementById('btn');
         var insertPrice = document.getElementById('bitcoin-price');
 
+        // Adding event listener to button to retrieve bitcoin api data
         button.addEventListener('click', function() {
 
             var XHR = new XMLHttpRequest();

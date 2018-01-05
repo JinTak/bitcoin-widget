@@ -1,6 +1,6 @@
 # Bitcoin Widget
 
-![Widget](images/TicTacToe.jpg)
+![Widget](assets/images/bitcoin.jpg)
 
 ### Currently, only desktop friendly. Working on making it responsive to all displays.
 

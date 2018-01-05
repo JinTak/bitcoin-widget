@@ -2,7 +2,7 @@
 
 ![Widget](assets/images/bitcoin.jpg)
 
-### Currently, only desktop friendly. Working on making it responsive to all displays.
+### Currently, only desktop friendly. Working on making it responsive on all displays.
 
 #### Pulling data from [Coindesk API](https://www.coindesk.com/api/)
 
